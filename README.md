@@ -18,6 +18,16 @@
 - 「（ここに〜が入ります）」となっている部分が仮の文章です。`class="placeholder"`（グレーの文字）を外すと通常の色になります。
 - 研究室名「鈴木英太研究室」は、全ページのヘッダー・タイトル・フッターに入っています。
 
+## 公開（lab.e-edu.jp）
+
+1. GitHub に `E-edu-byte/lab-site`（Private）を作り、このフォルダを push する
+2. Vercel で「Add New → Project」から `lab-site` を Import（Framework Preset は Other、Build Command は空のまま）
+3. Vercel のプロジェクト設定 → Domains で `lab.e-edu.jp` を追加
+4. ムームードメインの DNS 設定で、Vercel に表示された CNAME（`lab` → `〜.vercel-dns-017.com` など）を追加
+5. 本文がそろったら、全ページの `<meta name="robots" content="noindex">` を消して検索結果に出るようにする
+
+GitHub の main に push すると、Vercel が自動で更新します。
+
 ## 手元での確認
 
 ```

@@ -9,7 +9,7 @@
 |---|---|
 | HOME（ごあいさつ・研究室紹介・活動内容・おしらせ・アクセス） | `index.html` |
 | プロフィール | `profile/index.html` |
-| 臨床実践 | `clinical/index.html` |
+| 実践活動 | `clinical/index.html` |
 | 研究活動 | `research/index.html` |
 | 教育・研修活動 | `education/index.html` |
 | お問い合わせ | `contact/index.html` |

@@ -83,7 +83,7 @@ img { max-width: 100%; display: block; }
   padding: 72px 16px; text-align: center;
 }
 .hero p.lead { font-size: clamp(1.3rem, 4vw, 2rem); font-weight: 700; letter-spacing: 0.1em; }
-.hero p.sub { color: var(--muted); margin-top: 8px; }
+.hero p.sub { color: #000; margin-top: 8px; }
 
 /* ---- 下層ページの見出し帯 ---- */
 .page-title {

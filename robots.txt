@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /student/
+
+Sitemap: https://lab.e-edu.jp/sitemap.xml

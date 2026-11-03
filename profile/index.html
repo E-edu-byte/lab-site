@@ -3,13 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- 本文が仮のあいだは検索結果に出さない。本公開のときにこの行を消す -->
-<meta name="robots" content="noindex">
 <title>プロフィール | 鈴木英太研究室｜京都教育大学</title>
 <meta name="description" content="京都教育大学 総合教育臨床センター 鈴木英太研究室のホームページです。特別支援教育・インクルーシブ教育に関する研究・臨床・教育活動を紹介しています。">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;700&family=Shippori+Mincho:wght@600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;700&family=Shippori+Mincho:wght@600&family=BIZ+UDPGothic:wght@400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/style.css">
 </head>
 <body id="top">
@@ -17,7 +15,10 @@
 <header class="site-header">
   <div class="header-inner">
     <a class="brand" href="/"><img src="/assets/kyokyo-logo.svg" alt="国立大学法人 京都教育大学" width="176" height="44"><strong>鈴木英太研究室</strong></a>
-    <a class="contact-btn" href="/contact/">✉ お問い合わせ</a>
+    <div class="header-actions">
+      <a class="student-btn" href="/student/">🔒 学生専用ページ</a>
+      <a class="contact-btn" href="/contact/">✉ お問い合わせ</a>
+    </div>
     <button class="menu-toggle" type="button" aria-label="メニューを開く" aria-expanded="false">☰</button>
   </div>
   <nav class="global-nav" aria-label="メインメニュー">
@@ -26,7 +27,9 @@
       <li><a href="/profile/" aria-current="page">プロフィール</a></li>
       <li><a href="/practice/">実践活動</a></li>
       <li><a href="/research/">研究活動</a></li>
-      <li><a href="/education/">教育・研修活動</a></li>
+      <li><a href="/education/">教育活動</a></li>
+      <li><a href="/hitoyasumi/">ひとやすみ</a></li>
+      <li class="sp-only"><a href="/student/">学生専用ページ</a></li>
       <li class="sp-only"><a href="/contact/">お問い合わせ</a></li>
     </ul>
   </nav>
@@ -45,18 +48,39 @@
     </div>
     <table class="table">
       <tr><th>専門分野</th><td>特別支援教育、インクルーシブ教育</td></tr>
-      <tr><th>資格</th><td>公認心理師<br>特別支援教育士スーパーバイザー（S.E.N.S-SV）<br>臨床発達心理士<br>UDL Credential 1, 2, 3</td></tr>
+      <tr><th>資格</th><td>公認心理師<br>特別支援教育士スーパーバイザー（S.E.N.S-SV）<br>臨床発達心理士<br>UDL Credential 1, 2, 3（CAST）</td></tr>
     </table>
   </div>
 </section>
 <section>
   <div class="wrap prose">
     <h2>経歴</h2>
-    <ul class="list">
-      <li>東京都立大学理学部数学科卒業</li>
-      <li>京都教育大学大学院教育学研究科障害児教育専修修了</li>
-      <li>京都府内公立学校教諭</li>
-      <li>京都教育大学 総合教育臨床センター 講師</li>
+    <ul class="list no-bullet">
+      <li>1998年4月 – 2003年3月　東京都立大学 理学部 数学科</li>
+      <li>2004年4月 – 2006年3月　舞鶴市立白糸中学校 教諭</li>
+      <li>2006年4月 – 2016年3月　向日市立勝山中学校 教諭</li>
+      <li>2009年4月 – 2011年3月　京都教育大学大学院 教育学研究科 障害児教育専修</li>
+      <li>2016年4月 – 2023年2月　向日市立寺戸中学校 教諭</li>
+      <li>2023年3月 – 現在　京都教育大学 教育創生リージョナルセンター機構 総合教育臨床センター 講師</li>
+      <li>2024年10月 – 現在　京都文教大学 非常勤講師</li>
+    </ul>
+  </div>
+</section>
+<section>
+  <div class="wrap prose">
+    <h2>委員歴</h2>
+    <ul class="list no-bullet">
+      <li>2017年4月 – 現在　NHKティーチャーズライブラリー 編集委員</li>
+      <li>2021年10月 – 現在　新興出版社啓林館 教科書用図書（中学校数学）編集委員</li>
+      <li>2022年6月 – 2026年3月　一般社団法人 日本LD学会 第4期代議員</li>
+      <li>2023年6月 – 現在　日本臨床発達心理士会 代議員（京都支部）</li>
+      <li>2024年4月 – 現在　一般財団法人 特別支援教育士資格認定協会 将来構想推進委員</li>
+      <li>2024年4月 – 2026年3月　福知山市教育委員会 多様な学び推進連携検討委員</li>
+      <li>2024年6月 – 2026年5月　一般社団法人 臨床発達心理士認定運営機構 将来構想委員</li>
+      <li>2025年4月 – 2026年3月　京都市立京都奏和高等学校 学校運営協議会委員</li>
+      <li>2026年4月 – 現在　京都府教育委員会 令和8年度京都府切れ目ない支援体制整備に係る支援地域巡回相談員</li>
+      <li>2026年4月 – 現在　一般社団法人 日本LD学会 第5期代議員</li>
+      <li>2026年6月 – 現在　一般財団法人 特別支援教育士資格認定協会 理事、認定委員、研修委員</li>
     </ul>
   </div>
 </section>
@@ -75,15 +99,21 @@
 </main>
 
 <footer class="site-footer">
+<div class="footer-inner">
+  <a class="banner-link" href="https://www.kyokyo-u.ac.jp/" target="_blank" rel="noopener"><img src="/assets/kyokyo-logo.svg" alt="国立大学法人 京都教育大学（公式サイトへ）" width="176" height="44"></a>
+  <div class="footer-main">
   <nav>
       <a href="/">HOME</a>
       <a href="/profile/">プロフィール</a>
       <a href="/practice/">実践活動</a>
       <a href="/research/">研究活動</a>
-      <a href="/education/">教育・研修活動</a>
+      <a href="/education/">教育活動</a>
+      <a href="/hitoyasumi/">ひとやすみ</a>
       <a href="/contact/">お問い合わせ</a>
   </nav>
   <p>&copy; 2026 京都教育大学 鈴木英太研究室</p>
+  </div>
+</div>
 </footer>
 
 <a class="to-top" href="#top" aria-label="ページの先頭へ">▲</a>

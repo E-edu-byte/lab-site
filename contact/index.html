@@ -3,13 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- 本文が仮のあいだは検索結果に出さない。本公開のときにこの行を消す -->
-<meta name="robots" content="noindex">
 <title>お問い合わせ | 鈴木英太研究室｜京都教育大学</title>
 <meta name="description" content="京都教育大学 総合教育臨床センター 鈴木英太研究室のホームページです。特別支援教育・インクルーシブ教育に関する研究・臨床・教育活動を紹介しています。">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;700&family=Shippori+Mincho:wght@600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;700&family=Shippori+Mincho:wght@600&family=BIZ+UDPGothic:wght@400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/style.css">
 </head>
 <body id="top">
@@ -17,7 +15,10 @@
 <header class="site-header">
   <div class="header-inner">
     <a class="brand" href="/"><img src="/assets/kyokyo-logo.svg" alt="国立大学法人 京都教育大学" width="176" height="44"><strong>鈴木英太研究室</strong></a>
-    <a class="contact-btn" href="/contact/">✉ お問い合わせ</a>
+    <div class="header-actions">
+      <a class="student-btn" href="/student/">🔒 学生専用ページ</a>
+      <a class="contact-btn" href="/contact/">✉ お問い合わせ</a>
+    </div>
     <button class="menu-toggle" type="button" aria-label="メニューを開く" aria-expanded="false">☰</button>
   </div>
   <nav class="global-nav" aria-label="メインメニュー">
@@ -26,7 +27,9 @@
       <li><a href="/profile/">プロフィール</a></li>
       <li><a href="/practice/">実践活動</a></li>
       <li><a href="/research/">研究活動</a></li>
-      <li><a href="/education/">教育・研修活動</a></li>
+      <li><a href="/education/">教育活動</a></li>
+      <li><a href="/hitoyasumi/">ひとやすみ</a></li>
+      <li class="sp-only"><a href="/student/">学生専用ページ</a></li>
       <li class="sp-only"><a href="/contact/">お問い合わせ</a></li>
     </ul>
   </nav>
@@ -38,6 +41,13 @@
   <div class="wrap prose">
     <h2>お問い合わせ</h2>
     <p>　研究に関するお問い合わせや、研修・講演のご依頼などは、下記のフォームからお送りください。</p>
+    <div class="notice">
+      <p class="notice-title">ご確認ください</p>
+      <ul>
+        <li><strong>個別の学習相談・発達や障害に関する相談、医療に関するご相談は、受け付けておりません。</strong><br>お住まいの地域の教育相談機関、お子さんの在籍校、医療機関などにご相談ください。</li>
+        <li>お返事までに1週間ほどお時間をいただくことがあります。また、内容によってはお返事を差し上げられない場合がありますので、あらかじめご了承ください。</li>
+      </ul>
+    </div>
     <!-- Googleフォームの「送信 → <> 埋め込む」で出るURLを src に入れる。例: https://docs.google.com/forms/d/e/〜/viewform?embedded=true -->
     <div class="form-slot">
       <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfrQYfJ-Hk1lBRbp_rBwxyNOXT5vaoajk2DFWcFRo18Neovtw/viewform?embedded=true" title="お問い合わせフォーム" loading="lazy">フォームを読み込み中…</iframe>
@@ -48,15 +58,21 @@
 </main>
 
 <footer class="site-footer">
+<div class="footer-inner">
+  <a class="banner-link" href="https://www.kyokyo-u.ac.jp/" target="_blank" rel="noopener"><img src="/assets/kyokyo-logo.svg" alt="国立大学法人 京都教育大学（公式サイトへ）" width="176" height="44"></a>
+  <div class="footer-main">
   <nav>
       <a href="/">HOME</a>
       <a href="/profile/">プロフィール</a>
       <a href="/practice/">実践活動</a>
       <a href="/research/">研究活動</a>
-      <a href="/education/">教育・研修活動</a>
+      <a href="/education/">教育活動</a>
+      <a href="/hitoyasumi/">ひとやすみ</a>
       <a href="/contact/">お問い合わせ</a>
   </nav>
   <p>&copy; 2026 京都教育大学 鈴木英太研究室</p>
+  </div>
+</div>
 </footer>
 
 <a class="to-top" href="#top" aria-label="ページの先頭へ">▲</a>

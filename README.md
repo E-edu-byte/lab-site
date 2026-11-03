@@ -7,11 +7,11 @@
 
 | ページ | ファイル |
 |---|---|
-| HOME（ごあいさつ・研究室紹介・活動内容・おしらせ・アクセス） | `index.html` |
+| HOME（ごあいさつ・研究室紹介・おしらせ） | `index.html` |
 | プロフィール | `profile/index.html` |
 | 実践活動 | `practice/index.html` |
 | 研究活動 | `research/index.html` |
-| 教育・研修活動 | `education/index.html` |
+| 教育活動 | `education/index.html` |
 | お問い合わせ | `contact/index.html` |
 
 - 見た目（色・文字の大きさなど）は `assets/style.css` にまとめています。メインカラーはファイル先頭の `--accent` で変えられます。
@@ -24,7 +24,7 @@
 2. Vercel で「Add New → Project」から `lab-site` を Import（Framework Preset は Other、Build Command は空のまま）
 3. Vercel のプロジェクト設定 → Domains で `lab.e-edu.jp` を追加
 4. ムームードメインの DNS 設定で、Vercel に表示された CNAME（`lab` → `〜.vercel-dns-017.com` など）を追加
-5. 本文がそろったら、全ページの `<meta name="robots" content="noindex">` を消して検索結果に出るようにする
+5. 検索結果に出す設定は済んでいます（学生専用ページ `student/` だけは `noindex`）。`sitemap.xml` と `robots.txt` のドメインは `lab.e-edu.jp` です
 
 GitHub の main に push すると、Vercel が自動で更新します。
 
